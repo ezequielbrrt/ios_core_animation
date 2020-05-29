@@ -11,7 +11,6 @@ import UIKit
 class ViewController: UIViewController {
 
     private let basicView = UIView()
-    
     var yAnchor:NSLayoutConstraint!
     var xAnchor:NSLayoutConstraint!
     var widthAnchor:NSLayoutConstraint!
@@ -30,19 +29,46 @@ class ViewController: UIViewController {
     
     private func prepareBasicView(){
         basicView.backgroundColor = .blue
-        basicView.translatesAutoresizingMaskIntoConstraints                      = false
-        basicView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        basicView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-        basicView.heightAnchor.constraint(equalToConstant: 200).isActive         = true
-        basicView.widthAnchor.constraint(equalToConstant: 200).isActive          = true
+        basicView.translatesAutoresizingMaskIntoConstraints = false
         
-        animateBox(to: .green)
+        yAnchor = basicView.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+        yAnchor.isActive = true
+        
+        xAnchor = basicView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+        xAnchor.isActive = true
+        
+        heightAnchor = basicView.heightAnchor.constraint(equalToConstant: 200)
+        heightAnchor.isActive = true
+        
+        widthAnchor = basicView.widthAnchor.constraint(equalToConstant: 200)
+        widthAnchor.isActive = true
+        
+        perform(#selector(self.animateBox), with: nil, afterDelay: 1)
+        
         
     }
     
-    fileprivate func animateBox(to color: UIColor){
-        UIView.animate(withDuration: 0.3, delay: 1, usingSpringWithDamping: 0.5, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
-            self.basicView.backgroundColor = color
+    @objc fileprivate func animateBox(){
+        
+        yAnchor.isActive = false
+        yAnchor = basicView.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -100)
+        yAnchor.isActive = true
+        
+//        xAnchor.isActive = false
+//        xAnchor = basicView.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 20)
+//        xAnchor.isActive = true
+        
+        widthAnchor.isActive = false
+        widthAnchor = basicView.widthAnchor.constraint(equalToConstant: 300)
+        widthAnchor.isActive = true
+        
+        
+        heightAnchor.isActive = false
+        heightAnchor = basicView.heightAnchor.constraint(equalToConstant: self.view.frame.height - 50)
+        heightAnchor.isActive = true
+        
+        UIView.animate(withDuration: 0.6, delay: 0, usingSpringWithDamping: 0.4, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
+            self.view.layoutIfNeeded()
         })
     }
 

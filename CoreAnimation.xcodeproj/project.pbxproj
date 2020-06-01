@@ -12,6 +12,7 @@
 		93EFB4C524818104000C4B91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EFB4C424818104000C4B91 /* ViewController.swift */; };
 		93EFB4CA24818106000C4B91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93EFB4C924818106000C4B91 /* Assets.xcassets */; };
 		93EFB4CD24818106000C4B91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93EFB4CB24818106000C4B91 /* LaunchScreen.storyboard */; };
+		93EFB4D524818D68000C4B91 /* EBAnimatedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EFB4D424818D68000C4B91 /* EBAnimatedButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		93EFB4C924818106000C4B91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93EFB4CC24818106000C4B91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93EFB4CE24818106000C4B91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93EFB4D424818D68000C4B91 /* EBAnimatedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EBAnimatedButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +37,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		93B5C54D24859DB000FB5D52 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				93EFB4D424818D68000C4B91 /* EBAnimatedButton.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
 		93EFB4B424818104000C4B91 = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +64,7 @@
 		93EFB4BF24818104000C4B91 /* CoreAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				93B5C54D24859DB000FB5D52 /* Button */,
 				93EFB4C024818104000C4B91 /* AppDelegate.swift */,
 				93EFB4C224818104000C4B91 /* SceneDelegate.swift */,
 				93EFB4C424818104000C4B91 /* ViewController.swift */,
@@ -137,6 +148,7 @@
 				93EFB4C524818104000C4B91 /* ViewController.swift in Sources */,
 				93EFB4C124818104000C4B91 /* AppDelegate.swift in Sources */,
 				93EFB4C324818104000C4B91 /* SceneDelegate.swift in Sources */,
+				93EFB4D524818D68000C4B91 /* EBAnimatedButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

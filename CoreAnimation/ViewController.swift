@@ -17,16 +17,30 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.addSubview(basicView)
+        
         configUI()
-        prepareBasicView()
+        //prepareBasicView()
+        prepareButton()
+    }
+    
+    // MARK: UIBUTTON ANIMATION
+    private func prepareButton(){
+        let button = EBAnimatedButton(title: "Test")
+        view.addSubview(button)
+        
+        button.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        button.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        
     }
     
     private func configUI(){
         self.view.backgroundColor = .white
     }
     
+    // MARK: UIVIEW ANIMATION
     private func prepareBasicView(){
+        view.addSubview(basicView)
+        
         basicView.backgroundColor = .blue
         basicView.translatesAutoresizingMaskIntoConstraints = false
         

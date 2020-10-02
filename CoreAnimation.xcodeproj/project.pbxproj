@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		93384EF32489ABF000003AE3 /* ViewPropertyAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93384EF22489ABF000003AE3 /* ViewPropertyAnimator.swift */; };
 		93EFB4C124818104000C4B91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EFB4C024818104000C4B91 /* AppDelegate.swift */; };
 		93EFB4C324818104000C4B91 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EFB4C224818104000C4B91 /* SceneDelegate.swift */; };
 		93EFB4C524818104000C4B91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EFB4C424818104000C4B91 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		93384EF22489ABF000003AE3 /* ViewPropertyAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPropertyAnimator.swift; sourceTree = "<group>"; };
 		93EFB4BD24818104000C4B91 /* CoreAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93EFB4C024818104000C4B91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93EFB4C224818104000C4B91 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				93EFB4C924818106000C4B91 /* Assets.xcassets */,
 				93EFB4CB24818106000C4B91 /* LaunchScreen.storyboard */,
 				93EFB4CE24818106000C4B91 /* Info.plist */,
+				93384EF22489ABF000003AE3 /* ViewPropertyAnimator.swift */,
 			);
 			path = CoreAnimation;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 				93EFB4C124818104000C4B91 /* AppDelegate.swift in Sources */,
 				93EFB4C324818104000C4B91 /* SceneDelegate.swift in Sources */,
 				93EFB4D524818D68000C4B91 /* EBAnimatedButton.swift in Sources */,
+				93384EF32489ABF000003AE3 /* ViewPropertyAnimator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
